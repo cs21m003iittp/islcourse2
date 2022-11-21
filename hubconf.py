@@ -32,6 +32,10 @@ from sklearn import preprocessing
 from sklearn import model_selection
 from torchvision.transforms import ToTensor
 import torch.nn.functional as Fun
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Flatten, GlobalAveragePooling2D, Activation
+import keras
+from keras.optimizers import SGD
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
